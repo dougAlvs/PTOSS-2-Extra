@@ -145,9 +145,10 @@ public class numericalScaleQuestionTestAutomation {
         Assert.assertEquals("[Minimum value must be < maximum value for Numerical-scale question.]", output);
     }
 
+    @Test
     public void emptyBrief() {
         String output = createNumScaleQuestion("", "Descrição da pergunta", -2147483648, 1, 2147483647);
-        Assert.assertEquals("Question brief cannot be empty.", output);
+        Assert.assertEquals("Question brief cannot be empty", output);
     }
     
 }
